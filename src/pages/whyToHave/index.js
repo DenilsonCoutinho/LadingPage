@@ -68,7 +68,7 @@ export default function WhyToHave() {
               );
             })}
           </div>
-          <div className="flex flex-row justify-between p-10 items-center bg-[#042233] h-[20rem] px-16 rounded-b-sm ">
+          <div className="flex flex-row justify-between p-10 items-center bg-[#042233] h-[25rem] px-16 rounded-b-sm ">
             <div className="w-96">
               <Image src={changeOption?.image} />
             </div>
