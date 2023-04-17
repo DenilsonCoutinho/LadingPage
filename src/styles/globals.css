@@ -18,3 +18,74 @@ text-fill-color: transparent;
 .BorderLinear{
   background: linear-gradient(90deg, rgba(78, 234, 224, 0.92) 38.7%, rgba(64, 161, 155, 0.953118) 55.3%, #020505 100%);
 }
+.animatedElementBottomNow {
+  transition: 1.6s;
+  opacity: 0;
+  transform: translateY(-300px);
+}
+.animatedElementUp {
+  transition: 1.6s;
+  opacity: 0;
+  transform: translateY(-300px);
+}
+.animatedElementBottom{
+  transition: 1.6s;
+  opacity: 0;
+  transform: translateY(300px);
+}
+
+.animatedElementRight {
+  transition: 1.6s;
+  transform: translate(300px);
+  opacity: 0;
+}
+
+.animatedElementLeft {
+  transition: 1s;
+  transform: translate(-300px);
+  opacity: 0;
+}
+
+.animatedOpacity {
+  opacity: 0;
+  transition: 2s;
+}
+
+.interactiveScroll_title {
+  position: relative;
+  font-weight: bold;
+}
+
+.interactiveScroll_title.revealed::before {
+  width: 0;
+}
+
+.interactiveScroll_title::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #011826;
+  border-radius: 10px;
+  border-color: #9E438D transparent transparent transparent;
+  transition: 1800ms ease-in-out;
+}
+
+.interactiveScroll_titleWhite.revealedWhite::before {
+  width: 0;
+}
+
+.interactiveScroll_titleWhite::before {
+  content: '';
+  position: absolute;
+  /* top: 0; */
+  right: 0;
+  width: 70%;
+  height: 10%;
+  background: #FFF;
+  border-radius: 10px;
+  border-color: #9E438D transparent transparent transparent;
+  transition: 1600ms ease-in-out;
+}

@@ -6,6 +6,7 @@ import Logo from "../../assets/logo/Logo_Streamer_Ousado_verde_Limão_e_Preto-re
 import styles from "../../styles/presentation.module.css";
 //context
 import { useScreenSize } from "@/context/screenSizeContext";
+import { InteractiveScroll } from "@/utils/interactiveScroll";
 export default function presentation() {
   const { screenY, screenX } = useScreenSize();
   const [changeSide, setChangeSide] = useState(false)
@@ -101,6 +102,8 @@ export default function presentation() {
     }, [changeSide, startAnimatiomCircles, showCircles])
   return (
     <>
+      <InteractiveScroll/>
+
       <main className={`${styles.bgPresentation} bg-no-repeat lg:h-[99vh]`}>
         {showCircles &&
           totalCircles.map((circle, index) => {
@@ -137,17 +140,17 @@ export default function presentation() {
             );
           })}
         <div className=" flex flex-col justify-center items-center  gap-10 pt-24 max-w-[1300px] m-auto">
-          <Image src={Logo} width={300} height={300} />
-          <h1 className="2xl:text-7xl xl:text-5xl lg:text-4xl text-4xl linearText font-bold text-center">
+          <Image src={Logo} width={300} height={300} className="animatedElementBottomNow" />
+          <h1 className=" animatedElementBottomNow 2xl:text-7xl xl:text-5xl lg:text-4xl text-4xl linearText font-bold text-center">
             Criamos Landing Pages de <br />
             alta conversão.
           </h1>
-          <p className="linearText xl:text-3xl lg:text-2xl text-lg text-center px-2">
+          <h1 className="animatedElementBottomNow linearText xl:text-3xl lg:text-2xl text-lg text-center px-2">
             Aumente os resultados do seu negócio com estratégias de marketing
             <br />
             digital para impressionar seus clientes e aumentar suas vendas!
-          </p>
-          <button className="bg-[#21A500] w-52 h-14 rounded-2xl text-white mb-10">
+          </h1>
+          <button className="animatedElementBottomNow bg-[#21A500] w-52 h-14 rounded-2xl text-white mb-10">
             Veja alguns exemplos
           </button>
         </div>

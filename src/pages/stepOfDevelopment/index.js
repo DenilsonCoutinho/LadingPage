@@ -1,11 +1,11 @@
 export default function StepOfDevelopment() {
   return (
-    <div className="flex flex-col justify-center items-center max-w-[1000px] m-auto mt-44 px-4">
+    <div className=" flex flex-col justify-center items-center max-w-[1000px] m-auto mt-44 px-4">
       <h1 className="linearText text-center text-4xl font-semibold ">
         Etapas do desenvolvimento
       </h1>
-      <div className="flex flex-col justify-center m-auto items-center gap-3 px-4 lg:lg:w-[450px] h-56 border mt-20 rounded-xl">
-        <div className="rounded-full w-10 h-10 bg-white flex justify-center items-center font-bold">1</div>
+      <div className="flex animatedOpacity flex-col justify-center m-auto items-center gap-3 px-4 lg:lg:w-[450px] h-56 border mt-20 rounded-xl">
+        <div className=" rounded-full w-10 h-10 bg-white flex justify-center items-center font-bold">1</div>
         <h1 className="text-white font-bold ">PLANEJAMENTO</h1>
         <p className="text-white text-justify  ">
           Primeiro vamos realizar uma conversa pelo whatsapp para listamos cada
@@ -13,8 +13,8 @@ export default function StepOfDevelopment() {
           objetivo é entender qual a estrutura ideal para a sua página.
         </p>
       </div>
-      <div className="border-r-2 h-32"></div>
-      <div className="flex flex-col justify-center m-auto items-center gap-3 px-4 lg:w-[450px] h-56 border  rounded-xl">
+      <div className="border-r-2 h-32 animatedOpacity"></div>
+      <div className="animatedOpacity flex flex-col justify-center m-auto items-center gap-3 px-4 lg:w-[450px] h-56 border  rounded-xl">
       <div className="rounded-full w-10 h-10 bg-white flex justify-center items-center font-bold">2</div>
         
         <h1 className="text-white font-bold ">DESENVOLVIMENTO</h1>
@@ -24,9 +24,9 @@ export default function StepOfDevelopment() {
           responsividade da página. Ele pode durar entre 5 e 10 dias.
         </p>
       </div>
-      <div className="border-r-2 h-32"></div>
+      <div className="border-r-2 h-32 animatedOpacity"></div>
 
-      <div className="flex flex-col justify-center m-auto items-center gap-3 px-4 lg:w-[450px] h-56 border  rounded-xl">
+      <div className="animatedOpacity flex flex-col justify-center m-auto items-center gap-3 px-4 lg:w-[450px] h-56 border  rounded-xl">
       <div className="rounded-full w-10 h-10 bg-white flex justify-center items-center font-bold">3</div>
       
         <h1 className="text-white font-bold ">APRESENTAÇÃO E FEEDBACK</h1>
@@ -37,10 +37,10 @@ export default function StepOfDevelopment() {
           ideal!
         </p>
       </div>
-      <div className="border-r-2 h-32"></div>
+      <div className="border-r-2 h-32 animatedOpacity"></div>
 
-      <div className="flex flex-col justify-center m-auto items-center gap-3 px-4 lg:w-[450px] h-56 border  rounded-xl">
-      <div className="rounded-full w-10 h-10 bg-white flex justify-center items-center font-bold">4</div>
+      <div className="flex animatedOpacity flex-col justify-center m-auto items-center gap-3 px-4 lg:w-[450px] h-56 border  rounded-xl">
+      <div className=" rounded-full w-10 h-10 bg-white flex justify-center items-center font-bold">4</div>
        
         <h1 className="text-white font-bold ">ENTREGA FINAL</h1>
         <p className="text-white text-justify  ">
