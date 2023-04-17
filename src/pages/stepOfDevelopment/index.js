@@ -1,10 +1,10 @@
 export default function StepOfDevelopment() {
   return (
-    <div className="flex flex-col justify-center items-center max-w-[1000px] m-auto mt-44">
+    <div className="flex flex-col justify-center items-center max-w-[1000px] m-auto mt-44 px-4">
       <h1 className="linearText text-center text-4xl font-semibold ">
         Etapas do desenvolvimento
       </h1>
-      <div className="flex flex-col justify-center m-auto items-center gap-3 px-4 w-[450px] h-56 border mt-20 rounded-xl">
+      <div className="flex flex-col justify-center m-auto items-center gap-3 px-4 lg:lg:w-[450px] h-56 border mt-20 rounded-xl">
         <div className="rounded-full w-10 h-10 bg-white flex justify-center items-center font-bold">1</div>
         <h1 className="text-white font-bold ">PLANEJAMENTO</h1>
         <p className="text-white text-justify  ">
@@ -14,7 +14,7 @@ export default function StepOfDevelopment() {
         </p>
       </div>
       <div className="border-r-2 h-32"></div>
-      <div className="flex flex-col justify-center m-auto items-center gap-3 px-4 w-[450px] h-56 border  rounded-xl">
+      <div className="flex flex-col justify-center m-auto items-center gap-3 px-4 lg:w-[450px] h-56 border  rounded-xl">
       <div className="rounded-full w-10 h-10 bg-white flex justify-center items-center font-bold">2</div>
         
         <h1 className="text-white font-bold ">DESENVOLVIMENTO</h1>
@@ -26,7 +26,7 @@ export default function StepOfDevelopment() {
       </div>
       <div className="border-r-2 h-32"></div>
 
-      <div className="flex flex-col justify-center m-auto items-center gap-3 px-4 w-[450px] h-56 border  rounded-xl">
+      <div className="flex flex-col justify-center m-auto items-center gap-3 px-4 lg:w-[450px] h-56 border  rounded-xl">
       <div className="rounded-full w-10 h-10 bg-white flex justify-center items-center font-bold">3</div>
       
         <h1 className="text-white font-bold ">APRESENTAÇÃO E FEEDBACK</h1>
@@ -39,7 +39,7 @@ export default function StepOfDevelopment() {
       </div>
       <div className="border-r-2 h-32"></div>
 
-      <div className="flex flex-col justify-center m-auto items-center gap-3 px-4 w-[450px] h-56 border  rounded-xl">
+      <div className="flex flex-col justify-center m-auto items-center gap-3 px-4 lg:w-[450px] h-56 border  rounded-xl">
       <div className="rounded-full w-10 h-10 bg-white flex justify-center items-center font-bold">4</div>
        
         <h1 className="text-white font-bold ">ENTREGA FINAL</h1>
