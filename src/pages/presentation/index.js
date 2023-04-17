@@ -17,14 +17,8 @@ export default function presentation() {
         { total: '1', size: '30px' },
         { total: '1', size: '30px' },
         { total: '1', size: '30px' },
-        { total: '1', size: '30px' },
-        { total: '1', size: '30px' },
         { total: '1', size: '10px' },
-        { total: '1', size: '16px' },
-        { total: '1', size: '20px' },
         { total: '1', size: '10px' },
-        { total: '1', size: '16px' },
-        { total: '1', size: '17px' },
     ]
 
     function getRandomInt(min, max) {
@@ -148,7 +142,7 @@ export default function presentation() {
             Criamos Landing Pages de <br />
             alta conversão.
           </h1>
-          <p className="linearText xl:text-3xl text-2xl text-center">
+          <p className="linearText xl:text-3xl lg:text-2xl text-lg text-center px-2">
             Aumente os resultados do seu negócio com estratégias de marketing
             <br />
             digital para impressionar seus clientes e aumentar suas vendas!

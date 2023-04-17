@@ -40,8 +40,8 @@ export default function WhyToHave() {
 
   return (
     <>
-      <div className="flex flex-col max-w-[1000px] m-auto mt-44">
-        <h1 className="linearText lg:text-left text-center lg:text-4xl text-3xl font-semibold ]">
+      <div className="flex flex-col max-w-[1000px] m-auto lg:mt-44 mt-28">
+        <h1 className="linearText lg:text-left text-center lg:text-4xl text-2xl font-semibold ]">
           Por que você precisa de uma
           <br className=""/> landing page?
         </h1>
@@ -54,9 +54,12 @@ export default function WhyToHave() {
                   onClick={() => {
                     setChangeOption(items);
                   }}
-                  className={`cursor-pointer flex  flex-row gap-3 justify-center w-full items-center   border-[1px] ${
+                  className={`cursor-pointer flex 
+                   flex-row gap-3
+                  justify-center w-full
+                   items-center border-[1px] ${
                     changeOption?.id === index + 1
-                      ? "border-[#4EEAE0] lg:border-[5px] border-[5px]  h-14"
+                      ? "border-[#4EEAE0] lg:border-[2px] border-[4px]  h-14"
                       : " "
                   } h-14   `}
                 >

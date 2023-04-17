@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function TechnologiesUsed() {
   return (
     <>
-        <p className="mt-44  font-bold linearText text-4xl  text-center">Tecnologias utilizadas</p> 
+        <p className="mt-44  font-bold linearText lg:text-4xl text-3xl  text-center">Tecnologias utilizadas</p> 
     <div className="bg-[#042233] mt-10 ">
       <div
         className={`px-2
