@@ -1,0 +1,26 @@
+@keyframes scroll {
+	0% { transform: translateX(0px)}
+	100% { transform: translateX(calc(-390px* 3.2))}
+}
+
+.slider {
+
+	display: flex;
+	overflow:hidden;
+  
+}
+	
+.slideTrack {
+  position: relative;
+  animation: scroll 25s linear infinite;
+  display: flex;
+  width: calc(100 * 2)
+}
+
+.slideTrack:hover {
+    animation-play-state: paused;
+}
+	
+.slide {
+		width: 100rem;
+}
