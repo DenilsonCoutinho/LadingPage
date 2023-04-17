@@ -6,7 +6,7 @@ import style from "../../styles/presentation.module.css";
 export default function WhatIsLp() {
   return (
     <>
-      <div className='flex flex-row justify-between max-w-[1000px] m-auto mt-44'>
+      <div className='flex lg:flex-row flex-col justify-center items-center lg:justify-between max-w-[1000px] m-auto mt-44'>
         <Image src={PcImageLpResponsive}/>
         <div className="flex flex-col max-w-[29.6rem] ">
             <h1 className="linearText text-4xl font-semibold max-w-[29.6rem]">O que é uma landing page?</h1>

@@ -41,12 +41,12 @@ export default function WhyToHave() {
   return (
     <>
       <div className="flex flex-col max-w-[1000px] m-auto mt-44">
-        <h1 className="linearText text-4xl font-semibold ]">
+        <h1 className="linearText lg:text-left text-center lg:text-4xl text-3xl font-semibold ]">
           Por que você precisa de uma
-          <br /> landing page?
+          <br className=""/> landing page?
         </h1>
         <div className="mt-16 ">
-          <div className="flex justify-between bg-[#40A19B] h-14 rounded-t-lg ">
+          <div className="flex lg:flex-row flex-col justify-between bg-[#40A19B] lg:h-14 rounded-t-lg ">
             {options.map((items, index) => {
               return (
                 <div
@@ -54,11 +54,11 @@ export default function WhyToHave() {
                   onClick={() => {
                     setChangeOption(items);
                   }}
-                  className={`cursor-pointer flex  flex-row gap-3 justify-center w-full items-center   border ${
+                  className={`cursor-pointer flex  flex-row gap-3 justify-center w-full items-center   border-[1px] ${
                     changeOption?.id === index + 1
-                      ? "border-[#4EEAE0] border-tb-[4px]  h-14"
+                      ? "border-[#4EEAE0] lg:border-[5px] border-[5px]  h-14"
                       : " "
-                  } h-14  overflow-x-auto `}
+                  } h-14   `}
                 >
                   <h1 className="font-semibold text-white ">{items.name}</h1>
                   <h1 className="font-semibold text-2xl text-white ">
@@ -68,12 +68,12 @@ export default function WhyToHave() {
               );
             })}
           </div>
-          <div className="flex flex-row justify-between p-10 items-center bg-[#042233] h-[25rem] px-16 rounded-b-sm ">
+          <div className="flex lg:flex-row flex-col justify-center lg:justify-between p-10 items-center bg-[#042233] lg:h-[25rem] px-16 rounded-b-sm ">
             <div className="w-96">
               <Image src={changeOption?.image} />
             </div>
-            <div className="flex flex-col gap-5">
-              <p className="text-white w-96 break-words">
+            <div className="flex flex-col lg:items-start items-center gap-5">
+              <p className="text-white lg:text-justify text-center w-96 break-words">
                 {changeOption?.text}
               </p>
               <button className="bg-[#21A500] w-52 h-14 rounded-2xl text-white">

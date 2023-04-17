@@ -142,11 +142,11 @@ export default function presentation() {
           })}
         <div className=" flex flex-col justify-center items-center  gap-10 pt-24 max-w-[1300px] m-auto">
           <Image src={Logo} width={300} height={300} />
-          <h1 className="text-7xl linearText font-bold text-center">
+          <h1 className="2xl:text-7xl xl:text-5xl lg:text-4xl text-4xl linearText font-bold text-center">
             Criamos Landing Pages de <br />
             alta conversão.
           </h1>
-          <p className="linearText text-3xl text-center">
+          <p className="linearText xl:text-3xl text-2xl text-center">
             Aumente os resultados do seu negócio com estratégias de marketing
             <br />
             digital para impressionar seus clientes e aumentar suas vendas!
