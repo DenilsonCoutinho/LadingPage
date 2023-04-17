@@ -14,15 +14,17 @@ export default function presentation() {
     const totalCircles = [
         { total: '1', size: '20px' },
         { total: '1', size: '30px' },
+        { total: '1', size: '30px' },
+        { total: '1', size: '30px' },
+        { total: '1', size: '30px' },
+        { total: '1', size: '30px' },
+        { total: '1', size: '30px' },
         { total: '1', size: '10px' },
-        { total: '1', size: '5px' },
         { total: '1', size: '16px' },
         { total: '1', size: '20px' },
         { total: '1', size: '10px' },
         { total: '1', size: '16px' },
         { total: '1', size: '17px' },
-        { total: '1', size: '2px' },
-        { total: '1', size: '4px' },
     ]
 
     function getRandomInt(min, max) {
@@ -105,7 +107,7 @@ export default function presentation() {
     }, [changeSide, startAnimatiomCircles, showCircles])
   return (
     <>
-      <main className={`${styles.bgPresentation} bg-no-repeat h-[99vh]`}>
+      <main className={`${styles.bgPresentation} bg-no-repeat lg:h-[99vh]`}>
         {showCircles &&
           totalCircles.map((circle, index) => {
             return (
@@ -151,7 +153,7 @@ export default function presentation() {
             <br />
             digital para impressionar seus clientes e aumentar suas vendas!
           </p>
-          <button className="bg-[#21A500] w-52 h-14 rounded-2xl text-white">
+          <button className="bg-[#21A500] w-52 h-14 rounded-2xl text-white mb-10">
             Veja alguns exemplos
           </button>
         </div>
