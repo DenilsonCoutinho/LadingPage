@@ -151,7 +151,7 @@ export default function presentation() {
             digital para impressionar seus clientes e aumentar suas vendas!
           </h1>
           <button className="animatedElementBottomNow bg-[#21A500] w-52 h-14 rounded-2xl text-white mb-10">
-            Veja alguns exemplos
+            Quero minha Landing Page
           </button>
         </div>
       </main>
