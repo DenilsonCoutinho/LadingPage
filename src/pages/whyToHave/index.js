@@ -73,7 +73,7 @@ export default function WhyToHave() {
             })}
           </div>
           <div className="flex lg:flex-row flex-col justify-center lg:justify-between p-10 items-center bg-[#042233] lg:h-[25rem] px-16 rounded-b-sm ">
-            <div className="w-96">
+            <div className="w-96 m-auto">
               <Image src={changeOption?.image} width={270} />
             </div>
             <div className="flex flex-col lg:items-start items-center gap-5">
