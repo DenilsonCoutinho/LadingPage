@@ -163,10 +163,10 @@ export default function presentation() {
             href="https://wa.me/5548991109700"
             aria-label="whatsapp"
             target="__blank"
-            className=""
+            className="buttonAnimation"
           >
             {" "}
-            <button className="animatedElementBottomNow bg-[#21A500] w-52 h-14 rounded-2xl text-white mb-10">
+            <button className="animatedElementBottomNow bg-[#21A500] w-52 h-14 rounded-2xl text-white mb-10 ">
               Quero minha Landing Page
             </button>
           </a>
