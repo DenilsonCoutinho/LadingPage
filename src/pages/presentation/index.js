@@ -149,7 +149,7 @@ export default function presentation() {
               ></span>
             );
           })}
-        <div className=" flex flex-col justify-center items-center  gap-10 pt-24 max-w-[1300px] m-auto">
+        <div className=" flex flex-col justify-center items-center  gap-10 lg:pt-24 max-w-[1300px] m-auto">
           <Image
             src={Logo}
             width={300}
