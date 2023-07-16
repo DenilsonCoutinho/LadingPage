@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 //images
 import Image from "next/image";
-import Logo from "../../assets/logo/Logo_Streamer_Ousado_verde_Limão_e_Preto-removebg-preview 1.svg";
+import Logo from "../../assets/logo/Black_White_Minimalist_Logo__1_-removebg-preview.png";
 //style
 import styles from "../../styles/presentation.module.css";
 //context
@@ -21,12 +21,19 @@ export default function presentation() {
     { total: "1", size: "10px" },
     { total: "1", size: "10px" },
   ];
+  const [innerWidth, setInnerWidth] = useState();
+  const [innerHeigth, setInnerHeigth] = useState();
 
   function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
   }
+
+  useEffect(() => {
+    setInnerWidth(window.innerWidth);
+    setInnerHeigth(window.innerHeigth);
+  }, [screenX,screenY]);
 
   useEffect(() => {
     async function waitAnimationCircles() {
@@ -81,7 +88,7 @@ export default function presentation() {
         text.style.opacity = "1";
         text.style.transform = `translate(${getRandomInt(
           1,
-          screenX - 150
+          innerWidth - 150
         )}px, ${getRandomInt(1, screenY - 150)}px)`;
         if (index < 8) {
           delayTime += delayTime;
@@ -96,7 +103,7 @@ export default function presentation() {
         text.style.opacity = "1";
         text.style.transform = `translate(${getRandomInt(
           1,
-          -screenX - 150
+          -innerWidth - 150
         )}px, ${getRandomInt(-screenY - 150, 1)}px)`;
         if (index < 8) {
           delayTimeTwo += delayTimeTwo;
@@ -107,7 +114,6 @@ export default function presentation() {
   return (
     <>
       <InteractiveScroll />
-
       <main className={`${styles.bgPresentation} bg-no-repeat lg:h-[99vh]`}>
         {showCircles &&
           totalCircles.map((circle, index) => {
@@ -120,8 +126,8 @@ export default function presentation() {
                   height: circle.size,
                   transform: `translate(${getRandomInt(
                     1,
-                    screenX - 100
-                  )}px, ${getRandomInt(screenY - 100, 1)}px)`,
+                    innerWidth - 100
+                  )}px, ${getRandomInt(innerHeigth - 100, 1)}px)`,
                 }}
               ></span>
             );
@@ -137,8 +143,8 @@ export default function presentation() {
                   height: circle.size,
                   transform: `translate(${getRandomInt(
                     1,
-                    -screenX - 100
-                  )}px, ${getRandomInt(-screenY - 100, 1)}px)`,
+                    -innerWidth - 100
+                  )}px, ${getRandomInt(-innerHeigth - 100, 1)}px)`,
                 }}
               ></span>
             );
@@ -150,11 +156,11 @@ export default function presentation() {
             height={300}
             className="animatedElementBottomNow"
           />
-          <h1 className=" animatedElementBottomNow 2xl:text-7xl xl:text-5xl lg:text-4xl text-4xl linearText font-bold text-center">
+          <h1 className=" animatedElementBottomNow  text-4xl linearText font-bold text-center">
             Criamos Landing Pages de <br />
             alta conversão.
           </h1>
-          <h1 className="animatedElementBottomNow linearText xl:text-3xl lg:text-2xl text-lg text-center px-2">
+          <h1 className="animatedElementBottomNow linearText  lg:text-2xl text-lg text-center px-2">
             Aumente os resultados do seu negócio com estratégias de marketing
             <br />
             digital para impressionar seus clientes e aumentar suas vendas!

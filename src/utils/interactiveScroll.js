@@ -33,7 +33,7 @@ export function InteractiveScroll() {
     const elementUp = document.querySelectorAll(".animatedElementUp");
     if (elementUp.length > 0) {
       elementUp.forEach((e) => {
-        if (e.getBoundingClientRect().y <= window.innerHeight / 2) {
+        if (e.getBoundingClientRect().y <= window.innerHeight / 1.5) {
           e.style.opacity = "1";
           e.style.transform = "translateY(0px)";
         }

@@ -72,12 +72,12 @@ export default function WhyToHave() {
               );
             })}
           </div>
-          <div className="flex lg:flex-row flex-col justify-center lg:justify-between p-10 items-center bg-[#042233] lg:h-[25rem] px-16 rounded-b-sm ">
-            <div className="w-96 flex justify-center items-center">
+          <div className="flex lg:flex-row flex-col justify-center lg:justify-between p-10 items-center bg-[#042233] lg:h-[25rem] px-22 rounded-b-sm ">
+            <div className="lg:w-96 flex justify-center items-center">
               <Image src={changeOption?.image} width={270} />
             </div>
             <div className="flex flex-col lg:items-start items-center gap-5">
-              <p className="text-white lg:text-justify text-center w-96 break-words">
+              <p className="text-white lg:text-justify text-center lg:w-96  break-words">
                 {changeOption?.text}
               </p>
               <a
