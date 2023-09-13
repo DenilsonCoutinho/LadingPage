@@ -38,7 +38,6 @@ export default function Home() {
                 <FaWhatsapp className='text-green-500' />
             </a>
       <Presentation />
-      <div className="BorderLinear h-2"></div>
       <WhatIsLp />
       <WhyToHave />
       <OurDiferential />

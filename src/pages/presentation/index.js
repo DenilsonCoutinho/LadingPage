@@ -33,11 +33,11 @@ export default function presentation() {
   useEffect(() => {
     setInnerWidth(window.innerWidth);
     setInnerHeigth(window.innerHeigth);
-  }, [screenX,screenY]);
+  }, [screenX, screenY]);
 
   useEffect(() => {
     async function waitAnimationCircles() {
-      await new Promise((resolve) => setTimeout(resolve, 500));
+      await new Promise((resolve) => setTimeout(resolve, 1));
     }
 
     if (!startAnimatiomCircles) {
@@ -69,7 +69,7 @@ export default function presentation() {
 
   useEffect(() => {
     async function changeSideFunction() {
-      await new Promise((resolve) => setTimeout(resolve, 25000));
+      await new Promise((resolve) => setTimeout(resolve, 10000));
       setChangeSide(!changeSide);
     }
 
@@ -79,10 +79,10 @@ export default function presentation() {
     }
 
     function animateCircles() {
-      let delayTime = 0.001;
+      let delayTime = 0.401;
       const circles = document.querySelectorAll(".circle_animation");
       circles.forEach((text, index) => {
-        text.style.transition = "45s";
+        text.style.transition = "15s";
         text.style.transitionDelay = delayTime + "s";
 
         text.style.opacity = "1";
@@ -95,10 +95,10 @@ export default function presentation() {
         }
       });
 
-      let delayTimeTwo = 0.001;
+      let delayTimeTwo = 0.401;
       const circlesTwo = document.querySelectorAll(".circle_animationTwo");
       circlesTwo.forEach((text, index) => {
-        text.style.transition = "45s";
+        text.style.transition = "15s";
         text.style.transitionDelay = delayTimeTwo + "s";
         text.style.opacity = "1";
         text.style.transform = `translate(${getRandomInt(
@@ -149,7 +149,7 @@ export default function presentation() {
               ></span>
             );
           })}
-        <div className=" flex flex-col justify-center items-center  gap-10 lg:pt-24 max-w-[1300px] m-auto">
+        <div className=" flex flex-col justify-center items-center  gap-5 lg:pt-4 max-w-[1300px] m-auto">
           <Image
             src={Logo}
             width={300}
@@ -169,7 +169,7 @@ export default function presentation() {
             href="https://wa.me/5548991109700"
             aria-label="whatsapp"
             target="__blank"
-            className="buttonAnimation"
+            className="hover:scale-105 duration-150"
           >
             {" "}
             <button className="animatedElementBottomNow bg-[#21A500] w-52 h-14 rounded-2xl text-white mb-10 ">
