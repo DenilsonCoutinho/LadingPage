@@ -45,10 +45,10 @@ export default function SellMore() {
   return (
     <>
       <div className="flex flex-col max-w-[1000px] m-auto lg:mt-44 mt-28">
-        <h1 className="animatedElementBottom linearText text-center lg:text-4xl text-2xl font-semibold ]">
+        <h1 className="interactiveScroll_title linearText text-center lg:text-4xl text-2xl font-semibold ]">
           Landing Pages vende mais.
         </h1>
-        <p className="text-white text-center max-w-[670px] m-auto mt-5">Em meio à vastidão de sites convencionais, é fácil perder-se entre inúmeras páginas sem destino definido. O que você realmente necessita é de uma estratégia de landing pages altamente eficaz, capaz de converter visitantes desconhecidos em clientes fiéis.</p>
+        <p className="text-white text-center max-w-[670px] m-auto mt-5 interactiveScroll_title">Em meio à vastidão de sites convencionais, é fácil perder-se entre inúmeras páginas sem destino definido. O que você realmente necessita é de uma estratégia de landing pages altamente eficaz, capaz de converter visitantes desconhecidos em clientes fiéis.</p>
         <h1 className="linearText font-bold text-center max-w-[670px] text-xl m-auto mt-5">O que garantimos para você:</h1>
         <div className="flex lg:flex-row flex-col lg:justify-between justify-center items-center gap-6 mt-20">
           <div className="flex flex-col gap-2 ">
