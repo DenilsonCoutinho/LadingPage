@@ -18,6 +18,10 @@ text-fill-color: transparent;
 .BorderLinear{
   background: linear-gradient(90deg, rgba(78, 234, 224, 0.92) 38.7%, rgba(64, 161, 155, 0.953118) 55.3%, #020505 100%);
 }
+
+.ButtonLinear{
+  background: linear-gradient(1deg, rgba(211, 243, 240, 0.953) 30.7%,rgba(78, 234, 224, 0.92) 92.3%);
+}
 .animatedElementBottomNow {
   transition: 0.5s;
   opacity: 0;

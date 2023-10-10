@@ -7,6 +7,7 @@ import styles from "../../styles/presentation.module.css";
 //context
 import { useScreenSize } from "@/context/screenSizeContext";
 import { InteractiveScroll } from "@/utils/interactiveScroll";
+import { scrollToDiv } from "@/utils/scrollToDiv";
 export default function presentation() {
   const { screenY, screenX } = useScreenSize();
   const [changeSide, setChangeSide] = useState(false);
@@ -111,10 +112,14 @@ export default function presentation() {
       });
     }
   }, [changeSide, startAnimatiomCircles, showCircles]);
+
+  function scrollHome() {
+    scrollToDiv("pages")
+  }
   return (
     <>
       <InteractiveScroll />
-      <main className={`${styles.bgPresentation} bg-no-repeat lg:h-[99vh]`}>
+      <main className={`${styles.bgPresentation} bg-no-repeat 2xl:h-[100vh]`}>
         {showCircles &&
           totalCircles.map((circle, index) => {
             return (
@@ -149,33 +154,26 @@ export default function presentation() {
               ></span>
             );
           })}
-        <div className=" flex flex-col justify-center items-center  gap-5 lg:pt-4 max-w-[1300px] m-auto">
+        <div className=" flex flex-col justify-center items-center  gap-5 2xl:pt-4 max-w-[1300px] m-auto">
           <Image
             src={Logo}
             width={300}
             height={300}
-            className="animatedElementBottomNow"
+            className=""
           />
-          <h1 className=" animatedElementBottomNow  text-4xl linearText font-bold text-center">
+          <h1 className="   text-4xl linearText font-bold text-center">
             Criamos Landing Pages de <br />
             alta conversão.
           </h1>
-          <h1 className="animatedElementBottomNow linearText  lg:text-2xl text-lg text-center px-2">
+          <h1 className=" linearText  lg:text-2xl text-lg text-center px-2">
             Aumente os resultados do seu negócio com estratégias de marketing
             <br />
             digital para impressionar seus clientes e aumentar suas vendas!
           </h1>
-          <a
-            href="https://wa.me/5548991109700"
-            aria-label="whatsapp"
-            target="__blank"
-            className="hover:scale-105 duration-150"
-          >
-            {" "}
-            <button className="animatedElementBottomNow bg-[#21A500] w-52 h-14 rounded-2xl text-white mb-10 ">
-              Quero minha Landing Page
-            </button>
-          </a>
+          {" "}
+          <button onClick={() => scrollHome()} className=" font-bold ButtonLinear hover:scale-105 duration-150 w-72 h-14 rounded-2xl text-[#011826] mb-10 ">
+            <span className="font-thin">VER</span> EXEMPLOS
+          </button>
         </div>
       </main>
     </>

@@ -1,8 +1,8 @@
 import Head from "next/head";
 //pages
 import Presentation from "./presentation";
-import WhatIsLp from "./whatIsLp";
-import WhyToHave from "./whyToHave";
+import Carousel from "./Carousel";
+import SellMore from "./sellMore";
 import OurDiferential from "./ourDiferential";
 import StepOfDevelopment from "./stepOfDevelopment";
 import TechnologiesUsed from "./technologiesUsed";
@@ -11,10 +11,13 @@ import Footer from "@/components/footer";
 //icons
 import { FaArrowUp, FaWhatsapp } from "react-icons/fa";
 import { scrollToDiv } from "@/utils/scrollToDiv";
+import IntegrateTools from "./integrateTools";
+import HighPerformanceDesigns from "./highPerformanceDesigns";
+import CommonQuestions from "./commonQuestions";
 export default function Home() {
   function scrollHome() {
     scrollToDiv("scrollHome")
-}
+  }
 
   return (
     <div id="scrollHome" className="bg-[#011826] ">
@@ -31,20 +34,23 @@ export default function Home() {
         <link rel="icon" href="/public/Logo_Streamer_Ousado_verde_Limão_e_Preto-removebg-preview 1.svg" />
       </Head>
       <div onClick={() => scrollHome()} className='z-[200] bg-aatupyBlue hover:bg-aatupyLightBlue transitoon-all duration-200 text-white flex flex-col items-center justify-center fixed right-6 bottom-6 text-lg cursor-pointer w-10 h-10 border border-aatupyLightBlue p-2 rounded-full hover:bg-adeCollorSecondary '>
-                <FaArrowUp className="text-white" />
-            </div>
-            <a href='https://wa.me/5548991109700' aria-label='whatsapp' target='__blank' className='fixed right-5 bottom-20 text-5xl text-transparent  cursor-pointer z-50'>
-                <span id='blink' className={`animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-80`}></span>
-                <FaWhatsapp className='text-green-500' />
-            </a>
+        <FaArrowUp className="text-white" />
+      </div>
+      <a href='https://wa.me/5548991109700' aria-label='whatsapp' target='__blank' className='fixed right-5 bottom-20 text-5xl text-transparent  cursor-pointer z-50'>
+        <span id='blink' className={`animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-80`}></span>
+        <FaWhatsapp className='text-green-500' />
+      </a>
       <Presentation />
-      <WhatIsLp />
-      <WhyToHave />
+      <Carousel />
+      <SellMore />
       <OurDiferential />
+      <SeeAnyExamples />
+      <IntegrateTools />
+      <HighPerformanceDesigns />
+      <Carousel />
       <StepOfDevelopment />
-      <TechnologiesUsed />
-      <SeeAnyExamples/>
-      <Footer/>
+      <CommonQuestions />
+      <Footer />
     </div>
   );
 }

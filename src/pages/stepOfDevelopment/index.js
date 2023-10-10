@@ -1,6 +1,6 @@
 export default function StepOfDevelopment() {
   return (
-    <div className=" flex flex-col justify-center items-center max-w-[1000px] m-auto mt-44 px-4">
+    <div className=" flex flex-col justify-center items-center max-w-[1000px] m-auto my-20 px-4">
       <h1 className="linearText text-center lg:text-4xl text-2xl font-semibold ">
         Etapas do desenvolvimento
       </h1>
@@ -21,7 +21,7 @@ export default function StepOfDevelopment() {
         <p className="text-white text-justify lg:text-base text-sm ">
           Agora é a hora de transformarmos o briefing em realidade. Nesse
           estágio é desenvolvido a estrutura do site, o design e a
-          responsividade da página. Ele pode durar entre 5 e 15 dias.
+          responsividade da página. Ele pode durar entre 7 e 15 dias.
         </p>
       </div>
       <div className="border-r-2 h-32 animatedOpacity"></div>
