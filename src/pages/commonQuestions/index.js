@@ -4,7 +4,7 @@ import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
 export default function CommonQuestions() {
     return (
         <div className="flex lg:flex-row-reverse flex-col-reverse lg:justify-between justify-center items-center max-w-[1200px] my-28 m-auto ">
-            <Accordion className="lg:w-[500px] w-[270px]" allowToggle>
+            <Accordion className="lg:w-[500px] w-[280px]" allowToggle>
                 <AccordionItem className="mb-7">
                     <h2>
                         <AccordionButton>
@@ -43,7 +43,7 @@ export default function CommonQuestions() {
                             <AccordionIcon textColor={'white'} />
                         </AccordionButton>
                     </h2>
-                    <AccordionPanel pb={4} w={400} textColor={'white'} className="text-sm lg:w-[500px] pt-5">
+                    <AccordionPanel pb={4}  textColor={'white'} className="text-sm lg:w-[500px] pt-5">
                         Claro! Você terá direito a até 2 conjuntos de alterações, desde que não alterem radicalmente o design e o conteúdo da página.
                         Meu único pedido é para ser bastante específico na hora de solicitar mudanças, assim conseguimos realizar uma entrega mais ágil juntos.
                     </AccordionPanel>
