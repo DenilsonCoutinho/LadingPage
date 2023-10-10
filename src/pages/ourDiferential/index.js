@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import nextExplanation from '../../assets/ourDiferential/Group 16 (1).png'
+import nextExplanationMobile from '../../assets/ourDiferential/image_next_mobile.png'
 import hulu from '../../assets/ourDiferential/hulu.png'
 import netflix from '../../assets/ourDiferential/netflix.png'
 import nike from '../../assets/ourDiferential/nike.png'
@@ -37,7 +38,8 @@ export default function OurDiferential() {
           </div>
         </div>
       </div>
-      <Image src={nextExplanation} width={500} alt="imagem-explição" />
+      <Image src={nextExplanation} className='lg:flex hidden' width={500} alt="imagem-explição" />
+      <Image src={nextExplanation} className='lg:hidden flex' width={500} alt="imagem-explição" />
     </div>
   );
 }
