@@ -173,3 +173,16 @@ text-fill-color: transparent;
 		transform: translateY(0px);
 	}
 }
+
+@keyframes girar {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.elemento {
+  animation: girar 2s linear infinite;
+}

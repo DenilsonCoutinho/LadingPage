@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 //images
 import Image from "next/image";
-import Logo from "../../assets/logo/Black and White Minimalist Modern Clean Technology Logo  (1)-PhotoRoom.png-PhotoRoom.png";
+import Logo from "../../assets/logo/logo-1.png";
+import Logo2 from "../../assets/logo/logo-2.png";
 //style
 import styles from "../../styles/presentation.module.css";
 //context
@@ -119,7 +120,7 @@ export default function presentation() {
   return (
     <>
       <InteractiveScroll />
-      <main className={`${styles.bgPresentation} bg-no-repeat 2xl:h-[100vh]`}>
+      <main className={`${styles.bgPresentation} bg-no-repeat 2xl:h-[100vh] `}>
         {showCircles &&
           totalCircles.map((circle, index) => {
             return (
@@ -154,14 +155,22 @@ export default function presentation() {
               ></span>
             );
           })}
-        <div className=" flex flex-col justify-center items-center  gap-5 2xl:pt-4 max-w-[1300px] m-auto">
+        <div className=" flex flex-col justify-center h-[100vh] items-center gap-5 2xl:pt-4 max-w-[1300px] m-auto">
+          <div className="flex items-center">
           <Image
             src={Logo}
-            width={300}
+            width={110}
+            height={300}
+            className="elemento"
+          />
+          <Image
+            src={Logo2}
+            width={240}
             height={300}
             className=""
           />
-          <h1 className="   text-4xl linearText font-bold text-center">
+          </div>
+          <h1 className="text-4xl linearText font-bold text-center">
             Criamos Landing Pages de <br />
             alta conversão.
           </h1>
