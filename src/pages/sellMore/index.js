@@ -51,7 +51,7 @@ export default function SellMore() {
         <p className="text-white text-center max-w-[670px] m-auto mt-5 interactiveScroll_title">Em meio à vastidão de sites convencionais, é fácil perder-se entre inúmeras páginas sem destino definido. O que você realmente necessita é de uma estratégia de landing pages altamente eficaz, capaz de converter visitantes desconhecidos em clientes fiéis.</p>
         <h1 className="linearText font-bold text-center max-w-[670px] text-xl m-auto mt-5">O que garantimos para você:</h1>
         <div className="flex lg:flex-row flex-col lg:justify-between justify-center items-center gap-6 mt-20">
-          <div className="flex flex-col gap-2 ">
+          <div className="flex flex-col gap-2 animatedElementBottom">
             <div className="rounded-full border w-10 h-10 flex justify-center items-center border-[#24948D]">
               <FaRegImage className="text-[#24948D]" />
             </div>
@@ -59,7 +59,7 @@ export default function SellMore() {
             <p className="text-white mt-1 w-72">Páginas de alta conversão com desempenho e responsividade otimizados para escalar suas vendas no automático</p>
           </div>
 
-          <div className="flex flex-col gap-2 ">
+          <div className="flex flex-col gap-2 animatedElementBottom">
             <div className="rounded-full border w-10 h-10 flex justify-center items-center border-[#24948D]">
               <FaBolt className="text-[#24948D]" />
             </div>
@@ -67,7 +67,7 @@ export default function SellMore() {
             <p className="text-white mt-1 w-72">Com técnicas otimizadas e processos eficientes, garantimos a entrega rápida das suas páginas.</p>
           </div>
 
-          <div className="flex flex-col gap-2 ">
+          <div className="flex flex-col gap-2 animatedElementBottom">
             <div className="rounded-full border w-10 h-10 flex justify-center items-center border-[#24948D]">
               <FaPaintBrush className="text-[#24948D]" />
             </div>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 //images
 import Image from "next/image";
-import Logo from "../../assets/logo/Black_White_Minimalist_Logo__1_-removebg-preview.png";
+import Logo from "../../assets/logo/Black and White Minimalist Modern Clean Technology Logo  (1)-PhotoRoom.png-PhotoRoom.png";
 //style
 import styles from "../../styles/presentation.module.css";
 //context
