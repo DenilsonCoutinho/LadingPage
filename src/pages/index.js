@@ -5,7 +5,6 @@ import Carousel from "./Carousel";
 import SellMore from "./sellMore";
 import OurDiferential from "./ourDiferential";
 import StepOfDevelopment from "./stepOfDevelopment";
-import TechnologiesUsed from "./technologiesUsed";
 import SeeAnyExamples from "./seeAnyExamples";
 import Footer from "@/components/footer";
 //icons
@@ -31,7 +30,7 @@ export default function Home() {
           name="viewport"
           content="width=device-width, initial-scale=1.0"
         ></meta>
-        <link rel="icon" href="/public/Logo_Streamer_Ousado_verde_Limão_e_Preto-removebg-preview 1.svg" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div onClick={() => scrollHome()} className='z-[200] bg-aatupyBlue hover:bg-aatupyLightBlue transitoon-all duration-200 text-white flex flex-col items-center justify-center fixed right-6 bottom-6 text-lg cursor-pointer w-10 h-10 border border-aatupyLightBlue p-2 rounded-full hover:bg-adeCollorSecondary '>
         <FaArrowUp className="text-white" />

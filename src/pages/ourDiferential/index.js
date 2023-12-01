@@ -55,7 +55,7 @@ export default function OurDiferential() {
           </div>
         </div>
         <div className='xl:w-[500px] xl:h-[939px] lg:flex hidden'>
-          <Image src={nextExplanation} className={`${y > 1685 && y < 2101 && 'fixed top-0'}  `} width={500} alt="imagem-explição" />
+          <Image src={nextExplanation} className={`${y > 1685 && y < 2101 && ' top-0'}  `} width={500} alt="imagem-explição" />
         </div>
         <Image src={nextExplanationMobile} className='lg:hidden flex' width={500} alt="imagem-explição" />
       </div>
