@@ -30,7 +30,7 @@ export default function CommonQuestions() {
                         </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4} textColor={'white'} className="text-sm lg:w-[500px] pt-5">
-                        Você precisa ter apenas o domínio, a hospodagem é grátis!
+                        Você precisa ter apenas o domínio, a hospedagem é grátis!
                     </AccordionPanel>
                 </AccordionItem>
 
