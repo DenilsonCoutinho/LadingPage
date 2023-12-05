@@ -43,7 +43,7 @@ export default function CommonQuestions() {
                             <AccordionIcon textColor={'white'} />
                         </AccordionButton>
                     </h2>
-                    <AccordionPanel pb={4}  textColor={'white'} className="text-sm lg:w-[500px] pt-5">
+                    <AccordionPanel pb={4} textColor={'white'} className="text-sm lg:w-[500px] pt-5">
                         Claro! Você terá direito a até 2 conjuntos de alterações, desde que não alterem radicalmente o design e o conteúdo da página.
                         Meu único pedido é para ser bastante específico na hora de solicitar mudanças, assim conseguimos realizar uma entrega mais ágil juntos.
                     </AccordionPanel>
@@ -54,11 +54,13 @@ export default function CommonQuestions() {
                 <p className="text-white lg:w-96">Possui mais dúvidas? Você pode entrar em contato através dos links abaixo</p>
                 <div className="flex items-center gap-2">
                     <FaEnvelope className="text-white" />
-                    <p className="text-white">contact.denilsoncoutinho@gmail.com</p>
+                    <p  className="text-white">
+                        <a href="mailto:contact.denilsoncoutinho@gmail.com" x>contact.denilsoncoutinho@gmail.com</a>
+                    </p>
                 </div>
                 <div className="flex items-center gap-2">
                     <FaWhatsapp className="text-white" />
-                    <p className="text-white">(48)9 9110-9700</p>
+                    <a href="https://wa.me/+5548991109700" className="text-white">(48)9 9110-9700</a>
                 </div>
             </div>
         </div>
