@@ -18,19 +18,19 @@ export default function Carousel() {
             <div className={`${style.slideTrack} `}>
               <Image src={img1} width={400} />
               <Image src={img3} width={400} />
-              <Image src={img2} width={400} />
+              <Image src={img2} width={400} className="rounded-xl"  />
               <Image src={img5} width={400} className="rounded-xl" />
               <Image src={img4} width={400} />
 
               <Image src={img1} width={400} />
               <Image src={img3} width={400} />
-              <Image src={img2} width={400} />
+              <Image src={img2} width={400} className="rounded-xl"  />
               <Image src={img5} width={400} className="rounded-xl" />
               <Image src={img4} width={400} />
               
               <Image src={img1} width={400} />
               <Image src={img3} width={400} />
-              <Image src={img2} width={400} />
+              <Image src={img2} width={400} className="rounded-xl"  />
               <Image src={img5} width={400} className="rounded-xl" />
               <Image src={img4} width={400} />
             </div>

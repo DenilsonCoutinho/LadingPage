@@ -9,7 +9,7 @@ import img6 from '../../assets/whatIsLp 2/image 12.png'
 export default function SeeAnyExamples() {
   return (
     <>
-      <div className="flex flex-col justify-center items-center max-w-[1920px] m-auto my-44 px-4">
+      <div className="flex flex-col justify-center items-center max-w-[1920px] m-auto md:my-44 my-20 px-4">
         <h1 className="linearText text-center lg:text-5xl text-3xl  font-semibold " id="pages">Designs de alta <br />performance</h1>
         <p className="text-white max-w-[600px] text-center" >oferecemos páginas inteligentes para negócios digitais. Desenvolvemos toda a estrutura web a partir da sua identidade visual.</p>
         <div className="flex flex-wrap justify-center lg:gap-16 gap-6 mt-24" >

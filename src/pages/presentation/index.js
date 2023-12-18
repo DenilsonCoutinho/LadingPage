@@ -25,30 +25,7 @@ export default function presentation() {
   ];
   const [innerWidth, setInnerWidth] = useState();
   const [innerHeigth, setInnerHeigth] = useState();
-
-  function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min;
-  }
-
-  useEffect(() => {
-    setInnerWidth(window.innerWidth);
-    setInnerHeigth(window.innerHeigth);
-  }, [screenX, screenY]);
-
-  useEffect(() => {
-    async function waitAnimationCircles() {
-      await new Promise((resolve) => setTimeout(resolve, 1));
-    }
-
-    if (!startAnimatiomCircles) {
-      waitAnimationCircles();
-      setStartAnimationCircles(true);
-    }
-  }, []);
-
-  useEffect(() => {
+ useEffect(() => {
     const texts = document.querySelectorAll(".text_animation");
     const cardContainer = document.querySelectorAll(".cards_animation");
 
@@ -68,7 +45,30 @@ export default function presentation() {
       delayTime += 0.4;
     });
   }, []);
+useEffect(() => {
+    setInnerWidth(window.innerWidth);
+    setInnerHeigth(window.innerHeigth);
+  }, [screenX, screenY]);
+  function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
 
+  
+
+  useEffect(() => {
+    async function waitAnimationCircles() {
+      await new Promise((resolve) => setTimeout(resolve, 1));
+    }
+
+    if (!startAnimatiomCircles) {
+      waitAnimationCircles();
+      setStartAnimationCircles(true);
+    }
+  }, []);
+
+ 
   useEffect(() => {
     async function changeSideFunction() {
       await new Promise((resolve) => setTimeout(resolve, 10000));
@@ -92,9 +92,9 @@ export default function presentation() {
           1,
           innerWidth - 150
         )}px, ${getRandomInt(1, screenY - 150)}px)`;
-        if (index < 8) {
-          delayTime += delayTime;
-        }
+        // if (index < 4) {
+        //   delayTime += delayTime;
+        // }
       });
 
       let delayTimeTwo = 0.401;
@@ -107,9 +107,9 @@ export default function presentation() {
           1,
           -innerWidth - 150
         )}px, ${getRandomInt(-screenY - 150, 1)}px)`;
-        if (index < 8) {
-          delayTimeTwo += delayTimeTwo;
-        }
+        // if (index < 4) {
+        //   delayTimeTwo += delayTimeTwo;
+        // }
       });
     }
   }, [changeSide, startAnimatiomCircles, showCircles]);
@@ -120,7 +120,7 @@ export default function presentation() {
   return (
     <>
       <InteractiveScroll />
-      <main className={`${styles.bgPresentation} bg-no-repeat 2xl:h-[100vh] `}>
+      <main className={`${styles.bgPresentation} bg-no-repeat 2xl:h-[100vh] relative overflow-hidden`}>
         {showCircles &&
           totalCircles.map((circle, index) => {
             return (

@@ -45,7 +45,7 @@ export default function Home() {
       <OurDiferential />
       <SeeAnyExamples />
       <IntegrateTools />
-      <HighPerformanceDesigns />
+      {/* <HighPerformanceDesigns /> */}
       <Carousel />
       <StepOfDevelopment />
       <CommonQuestions />

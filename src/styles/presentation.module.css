@@ -9,6 +9,8 @@
     background: rgba(216, 216, 216, 0.432);
     border-radius: 50%;
     position: absolute;
+    top: 25%;
+    left: 25%;
     box-shadow: rgba(141, 199, 238, 0.856) 0px 10px 60px 10px, rgba(131, 204, 238, 0.247) 0px 0px 15px 10px, rgba(36, 126, 168, 0.103) 0px 100px 100px 10px inset;
   }
   
