@@ -1,10 +1,10 @@
 //images
 import Image from "next/image";
-import img1 from '../../assets/whatIsLp 2/image 9.png'
+import img1 from '../../assets/whatIsLp 2/image 19.svg'
 import img2 from '../../assets/whatIsLp 2/image 10.png'
 import img3 from '../../assets/whatIsLp 2/image 18.svg'
 import img4 from '../../assets/whatIsLp 2/image 7.png'
-import img5 from '../../assets/whatIsLp 2/image 3.png'
+import img5 from '../../assets/whatIsLp 2/image 8.svg'
 import img6 from '../../assets/whatIsLp 2/image 12.png'
 
 //style
@@ -17,9 +17,9 @@ export default function Carousel() {
           <div className={`${style.slider}`}>
             <div className={`${style.slideTrack} `}>
               <Image src={img1} width={400} />
-              <Image src={img3} width={400} className="rounded-xl"/>
-              <Image src={img2} width={400} className="rounded-xl"  />
               <Image src={img5} width={400} className="rounded-xl" />
+              <Image src={img2} width={400} className="rounded-xl"  />
+              <Image src={img3} width={400} className="rounded-xl"/>
               <Image src={img4} width={400} />
 
               <Image src={img1} width={400} />
