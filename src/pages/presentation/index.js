@@ -25,7 +25,7 @@ export default function presentation() {
   ];
   const [innerWidth, setInnerWidth] = useState();
   const [innerHeigth, setInnerHeigth] = useState();
- useEffect(() => {
+  useEffect(() => {
     const texts = document.querySelectorAll(".text_animation");
     const cardContainer = document.querySelectorAll(".cards_animation");
 
@@ -45,7 +45,8 @@ export default function presentation() {
       delayTime += 0.4;
     });
   }, []);
-useEffect(() => {
+
+  useEffect(() => {
     setInnerWidth(window.innerWidth);
     setInnerHeigth(window.innerHeigth);
   }, [screenX, screenY]);
@@ -54,8 +55,6 @@ useEffect(() => {
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min)) + min;
   }
-
-  
 
   useEffect(() => {
     async function waitAnimationCircles() {
@@ -68,7 +67,7 @@ useEffect(() => {
     }
   }, []);
 
- 
+
   useEffect(() => {
     async function changeSideFunction() {
       await new Promise((resolve) => setTimeout(resolve, 10000));
@@ -119,7 +118,7 @@ useEffect(() => {
   }
   return (
     <>
-      <InteractiveScroll />
+      {/* <InteractiveScroll /> */}
       <main className={`${styles.bgPresentation} bg-no-repeat 2xl:h-[100vh] relative overflow-hidden`}>
         {showCircles &&
           totalCircles.map((circle, index) => {
@@ -157,18 +156,18 @@ useEffect(() => {
           })}
         <div className=" flex flex-col justify-center h-[100vh] items-center gap-5 2xl:pt-4 max-w-[1300px] m-auto">
           <div className="flex items-center">
-          <Image
-            src={Logo}
-            width={110}
-            height={300}
-            className="elemento"
-          />
-          <Image
-            src={Logo2}
-            width={240}
-            height={300}
-            className=""
-          />
+            <Image
+              src={Logo}
+              width={110}
+              height={300}
+              className="elemento"
+            />
+            <Image
+              src={Logo2}
+              width={240}
+              height={300}
+              className=""
+            />
           </div>
           <h1 className="text-4xl linearText font-bold text-center">
             Criamos Landing Pages de <br />
