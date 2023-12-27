@@ -21,7 +21,7 @@ export default function StepOfDevelopment() {
         <p className="text-white text-justify lg:text-base text-sm ">
           Agora é a hora de transformarmos o briefing em realidade. Nesse
           estágio é desenvolvido a estrutura do site, o design e a
-          responsividade da página. Ele pode durar entre 7 e 15 dias.
+          responsividade da página. Ele pode durar até uma semana.
         </p>
       </div>
       <div className="border-r-2 h-32 animatedOpacity"></div>
