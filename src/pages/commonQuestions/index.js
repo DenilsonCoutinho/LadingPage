@@ -3,8 +3,20 @@ import { FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 export default function CommonQuestions() {
     return (
-        <div className="flex lg:flex-row-reverse flex-col-reverse lg:justify-between justify-center items-center max-w-[1200px] my-28 m-auto ">
-            <Accordion className="lg:w-[500px] w-[280px]" allowToggle>
+        <div className="flex lg:flex-row flex-col pl-6 lg:justify-between justify-center items-start max-w-[1200px] my-28 m-auto px-2 ">
+            <div className="flex flex-col gap-3 mb-10">
+                <h1 className="linearText lg:text-5xl text-2xl font-semibold ">Dúvidas comuns</h1>
+                <p className="text-white ">Possui mais dúvidas? Você pode entrar em contato através dos links abaixo</p>
+                <div className="flex items-center gap-2 ">
+                    <FaEnvelope className="text-white" />
+                    <a  className="text-white " href="mailto:contact.denilsoncoutinho@gmail.com" >contact.denilsoncoutinho<br className="md:hidden flex"/>@gmail.com</a>
+                </div>
+                <div className="flex items-center gap-2">
+                    <FaWhatsapp className="text-white" />
+                    <a href="https://wa.me/+5548991109700" className="text-white">(48)9 9110-9700</a>
+                </div>
+            </div>
+            <Accordion className="lg:w-[500px]  " allowToggle>
                 <AccordionItem className="mb-7">
                     <h2>
                         <AccordionButton>
@@ -49,20 +61,6 @@ export default function CommonQuestions() {
                     </AccordionPanel>
                 </AccordionItem>
             </Accordion>
-            <div className="flex flex-col gap-3 pl-6 mb-10">
-                <h1 className="linearText lg:text-5xl text-2xl font-semibold ">Dúvidas comuns</h1>
-                <p className="text-white lg:w-96">Possui mais dúvidas? Você pode entrar em contato através dos links abaixo</p>
-                <div className="flex items-center gap-2">
-                    <FaEnvelope className="text-white" />
-                    <p  className="text-white">
-                        <a href="mailto:contact.denilsoncoutinho@gmail.com" x>contact.denilsoncoutinho@gmail.com</a>
-                    </p>
-                </div>
-                <div className="flex items-center gap-2">
-                    <FaWhatsapp className="text-white" />
-                    <a href="https://wa.me/+5548991109700" className="text-white">(48)9 9110-9700</a>
-                </div>
-            </div>
         </div>
     )
 }

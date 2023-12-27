@@ -18,7 +18,7 @@ export default function SeeAnyExamples() {
           <Image src={img5} width={400} alt="image-1" />
           <Image src={img4} width={400} alt="image-3" />
           <Image src={img2} width={400} alt="image-4" />
-          <Image src={img6} width={400} alt="image-6" />
+          {/* <Image src={img6} width={400} alt="image-6" /> */}
         </div>
         <a href='https://wa.me/5548991109700' aria-label='whatsapp' target='__blank' >
           <button className="mt-10 uppercase hover:scale-105 duration-150 font-bold ButtonLinear w-72 h-14 rounded-2xl text-[#011826] mb-10 ">
