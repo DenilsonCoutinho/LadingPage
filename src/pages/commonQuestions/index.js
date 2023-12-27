@@ -27,7 +27,7 @@ export default function CommonQuestions() {
                         </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4} textColor={'white'} className="text-sm lg:w-[500px] pt-5" >
-                        Nossos projetos costumam levar entre 7 e 15 dias, a depender do plano que desenvolvermos para seu produto ou serviço.
+                        Nossos projetos costumam levar até uma semana, a depender do plano que desenvolvermos para seu produto ou serviço.
                         Alterações e páginas adicionais podem aumentar o nível do projeto. Você poderá conversar conosco para alinhamento de expectativas.
                     </AccordionPanel>
                 </AccordionItem>
@@ -42,7 +42,7 @@ export default function CommonQuestions() {
                         </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4} textColor={'white'} className="text-sm lg:w-[500px] pt-5">
-                        Você precisa ter apenas o domínio, a hospedagem é grátis!
+                    Você só precisa adquirir o domínio; a hospedagem é gratuita, dependendo do tráfego gerado pela página. Isso significa que, ao registrar o domínio do seu site, a hospedagem, ou seja, o espaço onde seu site será armazenado online, pode ser obtida gratuitamente com base na quantidade de visitas que sua página receber
                     </AccordionPanel>
                 </AccordionItem>
 
