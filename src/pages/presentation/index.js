@@ -160,11 +160,13 @@ export default function presentation() {
               src={Logo}
               width={110}
               height={300}
+              alt="logo"
               className="elemento"
             />
             <Image
               src={Logo2}
               width={240}
+              alt="logo2"
               height={300}
               className=""
             />

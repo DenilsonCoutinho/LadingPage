@@ -5,7 +5,9 @@ export default function IntegrateTools() {
         <>
             <div className="max-w-[1200px] flex flex-col justify-center items-center my-20 m-auto">
                 <div className='flex lg:flex-row flex-col justify-between md:gap-x-28 gap-4 items-center'>
-                    <Image src={pcDemonstration} height={500} />
+                    <Image src={pcDemonstration} height={500}
+                        alt="pcDemonstration"
+                    />
                     <div className='flex flex-col md:items-start items-center gap-4'>
                         <div className=''>
                             <h1 className="linearText lg:text-5xl text-2xl font-semibold lg:text-left text-center">Integre tudo com <br />suas ferramentas</h1>

@@ -15,23 +15,23 @@ export default function Carousel() {
         <div className={`${style.slide} `}>
           <div className={`${style.slider}`}>
             <div className={`${style.slideTrack} `}>
-              <Image src={img1} width={400} />
-              <Image src={img5} width={400} className="rounded-xl" />
-              <Image src={img2} width={400} className="rounded-xl"  />
-              <Image src={img3} width={400} className="rounded-xl"/>
-              <Image src={img4} width={400} />
+              <Image src={img1} width={400} alt="imagem-1" />
+              <Image src={img5} width={400} alt="imagem-2" className="rounded-xl" />
+              <Image src={img2} width={400} alt="imagem-3" className="rounded-xl"  />
+              <Image src={img3} width={400} alt="imagem-4" className="rounded-xl"/>
+              <Image src={img4} width={400} alt="imagem-5" />
 
-              <Image src={img2} width={400} className="rounded-xl"  />
-              <Image src={img1} width={400} />
-              <Image src={img3} width={400} />
-              <Image src={img5} width={400} className="rounded-xl" />
-              <Image src={img4} width={400} />
+              <Image src={img2} width={400} alt="imagem-6" className="rounded-xl"  />
+              <Image src={img1} width={400} alt="imagem-7" />
+              <Image src={img3} width={400} alt="imagem-8" />
+              <Image src={img5} width={400} alt="imagem-9" className="rounded-xl" />
+              <Image src={img4} width={400} alt="imagem-10" />
               
-              <Image src={img1} width={400} />
-              <Image src={img3} width={400} />
-              <Image src={img2} width={400} className="rounded-xl"  />
-              <Image src={img5} width={400} className="rounded-xl" />
-              <Image src={img4} width={400} />
+              <Image src={img1} width={400} alt="imagem-11" />
+              <Image src={img3} width={400} alt="imagem-12" />
+              <Image src={img2} width={400} alt="imagem-13" className="rounded-xl"  />
+              <Image src={img5} width={400} alt="imagem-14" className="rounded-xl" />
+              <Image src={img4} width={400} alt="imagem-15" />
             </div>
           </div>
         </div>
