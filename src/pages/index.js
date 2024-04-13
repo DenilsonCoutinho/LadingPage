@@ -13,10 +13,25 @@ import { scrollToDiv } from "@/utils/scrollToDiv";
 import IntegrateTools from "./integrateTools";
 import HighPerformanceDesigns from "./highPerformanceDesigns";
 import CommonQuestions from "./commonQuestions";
+import { useEffect } from "react";
 export default function Home() {
   function scrollHome() {
     scrollToDiv("scrollHome")
   }
+
+  let join = 0
+  function userView() {
+    if (document.visibilityState === 'visible') {
+      join++
+      console.log(join)
+    } else {
+      console.log('saiu')
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener('visibilitychange', userView)
+  }, [])
 
   return (
     <div id="scrollHome" className="bg-[#011826] ">

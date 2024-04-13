@@ -13,8 +13,6 @@ export default function OurDiferential() {
   useEffect(() => {
     function teste() {
       const scroll = window.scrollY
-
-      console.log(scroll)
       setY(scroll)
 
     }
