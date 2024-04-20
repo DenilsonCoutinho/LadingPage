@@ -50,7 +50,7 @@ export default function Home() {
       <div onClick={() => scrollHome()} className='z-[200] bg-aatupyBlue hover:bg-aatupyLightBlue transitoon-all duration-200 text-white flex flex-col items-center justify-center fixed right-6 bottom-6 text-lg cursor-pointer w-10 h-10 border border-aatupyLightBlue p-2 rounded-full hover:bg-adeCollorSecondary '>
         <FaArrowUp className="text-white" />
       </div>
-      <a href='https://wa.me/5548991109700' aria-label='whatsapp' target='__blank' className='fixed right-5 bottom-20 text-5xl text-transparent  cursor-pointer z-50'>
+      <a href='https://wa.me/5548991109700?text=Olá, quero criar meu site!' aria-label='whatsapp' target='__blank' className='fixed right-5 bottom-20 text-5xl text-transparent  cursor-pointer z-50'>
         <span id='blink' className={`animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-80`}></span>
         <FaWhatsapp className='text-green-500' />
       </a>

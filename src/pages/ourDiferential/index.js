@@ -29,7 +29,7 @@ export default function OurDiferential() {
             Diferenciais das nossas páginas
           </h1>
           <p className="text-white lg:w-96 lg:text-left text-center lg:m-0 m-auto">
-            Enquanto muitos optam pelo WordPress, nós prezamos pelo código feito à mão. Assim, conseguimos manter métricas ótimas de otimização na web. Além da tríade que compõe 94,9% (Javascript, HTML e CSS), utilizamos o framework chamado NEXT.JS, que incorpora conceitos de SPA e proporciona um upgrade na sua Landing page.</p>
+          Valorizamos o código feito à mão. Sim, também usamos WordPress. No entanto, a nossa abordagem personalizada nos permite manter métricas excepcionais de otimização na web. Além da tríade que compõe 94,9% (JavaScript, HTML e CSS), integramos o framework NEXT.JS, que incorpora conceitos de SPA e oferece um upgrade significativo para sua Landing Page</p>
           <h1 className={`mt-10 lg:text-left text-center linearText lg:text-3xl text-2xl font-bold `}>
             O que é SPA?
           </h1>
