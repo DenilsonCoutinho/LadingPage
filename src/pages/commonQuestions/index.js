@@ -42,7 +42,7 @@ export default function CommonQuestions() {
                         </AccordionButton>
                     </h2>
                     <AccordionPanel pb={4} textColor={'white'} className="text-sm lg:w-[500px] pt-5">
-                    Você só precisa adquirir o domínio; a hospedagem é gratuita, dependendo do tráfego gerado pela página. Isso significa que, ao registrar o domínio do seu site, a hospedagem, ou seja, o espaço onde seu site será armazenado online, pode ser obtida gratuitamente com base na quantidade de visitas que sua página receber
+                    Você só precisa adquirir o domínio e a hospedagem. 
                     </AccordionPanel>
                 </AccordionItem>
 
